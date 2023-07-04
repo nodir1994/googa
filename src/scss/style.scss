@@ -384,7 +384,14 @@ body.opened {
 
     }
 }
-
+input[type="date"]::-webkit-inner-spin-button,
+input[type="date"]::-webkit-calendar-picker-indicator {
+    display: none;
+    -webkit-appearance: none;
+}
+input[type="date"]{
+    background: #707070 url(../images/Calendar.png) no-repeat center right 10px;
+}
 section.general_section {
     position: relative;
 
