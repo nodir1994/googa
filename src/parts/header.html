@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GOOGA TRANSPORT INC</title>
     <link rel="stylesheet" href="css/swiper.css">
-    <link rel="stylesheet" href="css/jquery.fancybox.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
@@ -15,16 +14,16 @@
 </head>
 
 <body class="">
-    <header>
+    <header id="home">
         <div class="hdr_top">
             <div class="container">
                 <div class="hdr_top_main">
                     <p>Working Hours: Mon - Sat | 8:00am - 8:00pm | Sunday - Closed </p>
                     <div class="socials">
-                        <a href="#"><img src="../images/Facebook.png" alt=""></a>
-                        <a href="#"><img src="../images/Instagram.png" alt=""></a>
-                        <a href="#"><img src="../images/YouTube.png" alt=""></a>
-                        <a href="#"><img src="../images/LinkedIn.png" alt=""></a>
+                        <a href="#"><img src="images/Facebook.png" alt=""></a>
+                        <a href="#"><img src="images/Instagram.png" alt=""></a>
+                        <a href="#"><img src="images/YouTube.png" alt=""></a>
+                        <a href="#"><img src="images/LinkedIn.png" alt=""></a>
                     </div>
                 </div>
             </div>
@@ -32,26 +31,33 @@
         <div class="hdr_bottom">
             <div class="container">
                 <div class="hdr_bottom_main">
+                    <a href="#home" class="js-anchor-link" class="logo"><img src="images/logo.png" alt=""></a>
                     <ul class="menus">
-                        <li><a href="#">Why Us?</a></li>
-                        <li><a href="#">how it works</a></li>
-                        <li><a href="#">Services</a></li>
-                        <li><a href="#">Contacts</a></li>
+                        <li><a href="#why_us" class="js-anchor-link">Why Us?</a></li>
+                        <li><a href="#how_it" class="js-anchor-link">how it works</a></li>
+                        <li><a href="#services" class="js-anchor-link">Services</a></li>
+                        <li><a href="#contacts" class="js-anchor-link">Contacts</a></li>
                     </ul>
                     <a href="tel:(916) 532 1039" class="phone">
-                        <img src="../images/Phone.png" alt="">
-                        (916) 532 1039
+                        <img src="images/Phone.png" alt="">
+                        (916) 532 1039</a>
+                    <button class="open_sidebar">
+                        <svg width="28" height="22" viewBox="0 0 28 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g id="Sandwich menu">
+                            <rect id="Rectangle 676" width="28" height="4" fill="white"/>
+                            <rect id="Rectangle 677" y="9" width="28" height="4" fill="white"/>
+                            <rect id="Rectangle 678" y="18" width="28" height="4" fill="white"/>
+                            </g>
+                            </svg>
+                            
+                    </button>
                 </div>
             </div>
         </div>
-        <!-- <button class="open_sidebar">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M4 6H20V8H4V6ZM4 11H20V13H4V11ZM4 16H20V18H4V16Z" fill="#0B0F19" />
-            </svg>
-        </button> -->
+
 
     </header>
-    <div class="mobile__menu" style="display: none;">
+    <div class="mobile__menu">
         <div class="right_block">
             <button class="close" type="button">
                 <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -61,22 +67,23 @@
                 </svg>
             </button>
             <ul class="menus">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about_us.html">About us</a></li>
-                <li><a href="branches.html">Branches</a></li>
-                <li><a href="teachers.html">Teachers</a></li>
-                <li><a href="events.html">Events</a></li>
-                <li><a href="news.html">News</a></li>
-                <li><a href="contact_us.html">Contact us</a></li>
+                <li><a href="#why_us" class="js-anchor-link">Why Us?</a></li>
+                <li><a href="#how_it" class="js-anchor-link">how it works</a></li>
+                <li><a href="#services" class="js-anchor-link">Services</a></li>
+                <li><a href="#contacts" class="js-anchor-link">Contacts</a></li>
             </ul>
-            <ul class="languages">
-                <li><a href="#"> <img src="images/flag_uz.svg" alt="">Uzbek</a></li>
-                <li><a href="#" class="active"> <img src="images/flag_en.svg" alt="">English</a></li>
-                <li><a href="#"> <img src="images/flag_ru.svg" alt="">Русский</a></li>
-            </ul>
-            <a href="sign_in.html" class="large enter-site btn-orange">
-                <img src="images/user_white.svg" alt="">
-                Sign in / up
-            </a>
+            <div class="mobile_bottom_main">
+                <a href="tel:(916) 532 1039" class="phone">
+                    <img src="images/Phone.png" alt="">
+                    (916) 532 1039</a>
+                <p>Working Hours: Mon - Sat | 8:00am - 8:00pm | Sunday - Closed </p>
+                <div class="socials">
+                    <a href="#"><img src="images/Facebook.png" alt=""></a>
+                    <a href="#"><img src="images/Instagram.png" alt=""></a>
+                    <a href="#"><img src="images/YouTube.png" alt=""></a>
+                    <a href="#"><img src="images/LinkedIn.png" alt=""></a>
+                </div>
+            </div>
+
         </div>
     </div>

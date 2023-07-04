@@ -1,11 +1,65 @@
 @@include('parts/header.html')
-
-<section class="home_general">
+<section class="general_section">
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <img class="truck_img" src="images/truck1.jpg" alt="">
+                <div class="container">
+                    <div class="item">
+                        <div class="title">
+                            <b>auto</b>
+                            <span>transport</span>
+                            services
+                        </div>
+                        <p>quick, easy & safe
+                            auto shipping</p>
+                        <a href="#" class="btn_get_quote">get a quote</a>
+                        <a href="#" class="btn_call_now"><img src="images/phone_green.png" alt="">call now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <img class="truck_img" src="images/truck2.jpg" alt="">
+                <div class="container">
+                    <div class="item">
+                        <div class="title">
+                            <b>auto</b>
+                            <span>transport</span>
+                            services
+                        </div>
+                        <p>quick, easy & safe
+                            auto shipping</p>
+                        <a href="#" class="btn_get_quote">get a quote</a>
+                        <a href="#" class="btn_call_now"><img src="images/phone_green.png" alt="">call now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <img class="truck_img" src="images/truck3.jpg" alt="">
+                <div class="container">
+                    <div class="item">
+                        <div class="title">
+                            <b>auto</b>
+                            <span>transport</span>
+                            services
+                        </div>
+                        <p>quick, easy & safe
+                            auto shipping</p>
+                        <a href="#" class="btn_get_quote">get a quote</a>
+                        <a href="#" class="btn_call_now"><img src="images/phone_green.png" alt="">call now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="swiper-pagination"></div>
+    </div>
+</section>
+<section class="home_general" id="why_us">
     <div class="container">
         <h2>Why you should book with one of the
             top-rated auto transport companies:</h2>
         <div class="row">
-            <div class="col-lg-6">
+            <div class="col-lg-5">
                 <div class="content">
                     <p>In striving to be the best in the industry, Googa Transport Inc has become of of the fastest
                         growing companies in American market. </p>
@@ -19,14 +73,17 @@
                         providers.</p>
                 </div>
             </div>
-            <div class="col-lg-6">
-                <iframe width="1520" height="585" src="https://www.youtube.com/embed/O0sEu131MaE" title="Мерседес Майбах S680 (2023) - Невероятно роскошный королевский седан!" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <div class="col-lg-7">
+                <iframe width="1520" height="585" src="https://www.youtube.com/embed/O0sEu131MaE"
+                    title="Мерседес Майбах S680 (2023) - Невероятно роскошный королевский седан!" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
             </div>
         </div>
     </div>
 </section>
 @@include('parts/quote.html')
-<section class="how_it_works">
+<section class="how_it_works" id="how_it">
     <div class="container">
         <h2>How it works</h2>
         <div class="works_main">
@@ -49,87 +106,57 @@
     </div>
 </section>
 @@include('parts/quote.html')
-<section class="our_services">
+<section class="our_services" id="services">
     <div class="container">
         <h2>Explore Our Services</h2>
         <div class="row">
-            <div class="col-lg-6">
+            <div class="col-sm-6">
                 @@include('parts/service_item.html')
             </div>
-            <div class="col-lg-6">
+            <div class="col-sm-6">
                 @@include('parts/service_item.html')
             </div>
-            <div class="col-lg-6">
+            <div class="col-sm-6">
                 @@include('parts/service_item.html')
             </div>
-            <div class="col-lg-6">
+            <div class="col-sm-6">
                 @@include('parts/service_item.html')
             </div>
-            <div class="col-lg-6">
+            <div class="col-sm-6">
                 @@include('parts/service_item.html')
             </div>
-            <div class="col-lg-6">
+            <div class="col-sm-6">
                 @@include('parts/service_item.html')
             </div>
         </div>
     </div>
 </section>
-<section class="home_graduates" style="display: none;">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-3">
-                <h2>Our graduates</h2>
-                <div class="swiper_btns">
-                    <div class="swiper-button-prev">
-                        <svg width="7" height="10" viewBox="0 0 7 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M5.07712 0.244141L0.321289 4.99997L5.07712 9.75581L6.25546 8.57747L2.67796 4.99997L6.25546 1.42247L5.07712 0.244141Z"
-                                fill="#33354D" />
-                        </svg>
-                    </div>
-                    <div class="swiper-button-next">
-                        <svg width="7" height="10" viewBox="0 0 7 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M1.92247 9.75581L6.67831 4.99997L1.92247 0.244141L0.744141 1.42247L4.32164 4.99997L0.744141 8.57747L1.92247 9.75581Z"
-                                fill="#33354D" />
-                        </svg>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-9">
-                <div class="swiper-container padding_shadow graduates_swiper">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
+
 @@include('parts/quote.html')
 <section class="our_clientes">
     <div class="container">
         <h2>Our Clients Say!</h2>
         <div class="row">
-            <div class="col-lg-4">
+            <div class="col-sm-4">
                 @@include('parts/client.html')
             </div>
-            <div class="col-lg-4">
+            <div class="col-sm-4">
                 @@include('parts/client.html')
             </div>
-            <div class="col-lg-4">
+            <div class="col-sm-4">
                 @@include('parts/client.html')
             </div>
         </div>
     </div>
 </section>
-<section class="our_partners">
+<section id="contacts" class="our_partners">
     <div class="container">
-        <h2>Our Partners</h2>
         <div class="main_partners">
-            <a href="#"><img src="images/partner1.png" alt=""></a>
-            <a href="#"><img src="images/partner2.png" alt=""></a>
+            <div>
+                <a href="#"><img src="images/partner1.png" alt=""></a>
+                <h2>Our Partners</h2>
+                <a href="#"><img src="images/partner2.png" alt=""></a>
+            </div>
             <a href="#"><img src="images/partner3.png" alt=""></a>
             <a href="#"><img src="images/partner4.png" alt=""></a>
             <a href="#"><img src="images/partner5.png" alt=""></a>
