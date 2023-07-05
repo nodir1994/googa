@@ -416,7 +416,8 @@ section.general_section {
 
             @include mobile {
                 min-height: inherit;
-                padding: 10px 0;
+                padding: 15px 0 10px;
+                text-align: center;
             }
 
             .title {
@@ -526,6 +527,9 @@ section.general_section {
 
                 @include mobile {
                     color: #9F9F9F;
+                    margin-left: auto;
+                    margin-right: auto;
+                    display: block;
                     margin-bottom: 30px;
                     text-align: center;
                 }
@@ -544,7 +548,7 @@ section.general_section {
 
             @include mobile {
                 position: static;
-                height: 280px;
+                height: 370px;
                 object-position: right;
             }
         }
@@ -1082,7 +1086,7 @@ footer {
             margin-bottom: 30px;
 
             &::placeholder {
-                color: gray;
+                color: rgba(#dad2d2, .85);
             }
         }
 
