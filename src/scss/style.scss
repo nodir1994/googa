@@ -530,7 +530,7 @@ section.general_section {
                     margin-left: auto;
                     margin-right: auto;
                     display: block;
-                    margin-bottom: 30px;
+                    margin-bottom: 10px;
                     text-align: center;
                 }
             }
@@ -559,7 +559,7 @@ section.general_section {
 
         @include mobile() {
             bottom: auto;
-            top: 240px;
+            top: 310px;
         }
 
         .swiper-pagination-bullet {
@@ -621,7 +621,14 @@ section.home_general {
 
             @include mobile {
                 font-size: 21px;
+                text-align: center;
             }
+        }
+    }
+
+    h2 {
+        @include mobile {
+            padding-top: 20px;
         }
     }
 
@@ -1009,9 +1016,10 @@ footer {
     }
 
     .ftr_contact {
-        @include mobile(){
+        @include mobile() {
             padding: 0 20px;
         }
+
         .item {
             display: flex;
             align-items: flex-start;
@@ -1205,5 +1213,11 @@ footer {
     @include mobile {
         right: 30px;
         bottom: 30px;
+    }
+}
+
+footer form input::placeholder {
+    @include mobile {
+        color: #baabab !important
     }
 }
