@@ -36,6 +36,12 @@ $(document).ready(function () {
       $('.scrollup').removeClass('showed');
     }
   });
+  function getToday() {
+    const local = new Date();
+    local.setMinutes(local.getMinutes() - local.getTimezoneOffset());
+    return local.toJSON().slice(0, 10);
+  }
+  $('input[type=date]').val(getToday());
 
   $('.scrollup').click(function () {
     $("html, body").animate({ scrollTop: 0 }, 600);
