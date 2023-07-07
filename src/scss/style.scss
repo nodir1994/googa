@@ -387,7 +387,8 @@ body.opened {
 
 input[type="date"]::-webkit-inner-spin-button,
 input[type="date"]::-webkit-calendar-picker-indicator {
-    display: none;
+    // display: none;
+    opacity: 0;
     -webkit-appearance: none;
 }
 
@@ -1219,5 +1220,94 @@ footer {
 footer form input::placeholder {
     @include mobile {
         color: #baabab !important
+    }
+}
+
+.radio_style {
+    input {
+        display: none;
+
+        &:checked {
+            &+label {
+                &:after {
+                    background: #D9D9D9 url(../images/circle.svg) no-repeat center center;
+                    // background-size: 6px auto;
+                }
+            }
+        }
+    }
+
+    label {
+        position: relative;
+        padding-left: 30px;
+        color: #FFF;
+        font-size: 17px;
+        font-weight: 500;
+        line-height: normal;
+        margin-bottom: 15px;
+        cursor: pointer;
+
+        &:after {
+            content: "";
+            transition: all .15s;
+            position: absolute;
+            left: 0;
+            top: 3px;
+            display: block;
+            width: 16px;
+            height: 16px;
+            border-radius: 50%;
+            background: #D9D9D9 url(../images/circle_empty.svg) no-repeat center center;
+        }
+    }
+}
+
+.carier_radio {
+    display: flex;
+    justify-content: center;
+
+    @include ipad_pro() {
+        align-items: start;
+        justify-content: start;
+        margin-bottom: 50px;
+    }
+    @include mobile{
+        margin-bottom: 30px;
+    }
+
+    h5 {
+        color: #FFF;
+        font-size: 17px;
+        font-weight: 500;
+        line-height: normal;
+        margin-right: 15px;
+    }
+}
+
+.operable_radio {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+
+    @include ipad_pro() {
+        align-items: start;
+        justify-content: start;
+    }
+
+    >div {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 10px;
+    }
+
+    h5 {
+        color: #FFF;
+        font-size: 17px;
+        font-weight: 500;
+        line-height: normal;
+        margin-right: 15px;
+        margin-bottom: 15px;
     }
 }
