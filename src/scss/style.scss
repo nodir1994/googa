@@ -1271,7 +1271,8 @@ footer form input::placeholder {
         justify-content: start;
         margin-bottom: 50px;
     }
-    @include mobile{
+
+    @include mobile {
         margin-bottom: 30px;
     }
 
@@ -1309,5 +1310,67 @@ footer form input::placeholder {
         line-height: normal;
         margin-right: 15px;
         margin-bottom: 15px;
+    }
+}
+
+footer {
+    .wrap_select2 {
+        margin-bottom: 30px;
+    }
+
+    .select2-container {
+
+        .select2-selection__placeholder {
+            font-size: 17px;
+            color: rgba(#dad2d2, .85) !important;
+            font-weight: 500;
+        }
+
+        // .select2-container--classic .select2-selection--single .select2-selection__placeholder {
+        //     color: rgba(#dad2d2, .85) !important;
+
+        // }
+
+        .select2-selection--single {
+            height: 40px;
+            background: #707070 !important;
+            width: 100%;
+            border: 0 !important;
+            padding: 0 13px;
+            color: #FFF;
+            font-size: 17px;
+            font-weight: 500;
+            border-radius: 0;
+
+            &::placeholder {
+                color: rgba(#dad2d2, .85);
+            }
+
+            .select2-selection__rendered {
+                line-height: 40px;
+                color: #fff;
+                padding: 0;
+                color: #fff;
+                font-size: 17px;
+                font-weight: 500;
+            }
+        }
+
+        // .select2-dropdown {
+        //     border-color: transparent !important;
+        //     background: #707070 !important;
+        // }
+        // .select2-container--classic.select2-container--open {
+        // }
+
+        .select2-selection__arrow {
+            display: none !important;
+        }
+    }
+}
+
+#year {
+    option:first-child {
+        display: none;
     }
 }
